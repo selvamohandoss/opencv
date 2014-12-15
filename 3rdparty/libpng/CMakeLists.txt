@@ -29,7 +29,7 @@ if(MSVC)
   add_definitions(-D_CRT_SECURE_NO_DEPRECATE)
 endif(MSVC)
 
-if (HAVE_WINRT)
+if (WINRT)
   add_definitions(-DHAVE_WINRT)
 endif()
 
