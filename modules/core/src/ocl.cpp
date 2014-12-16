@@ -58,6 +58,13 @@
 # endif
 #endif
 
+#if defined(HAVE_WINRT)
+const char* getenv(const char* name)
+{
+    return NULL;
+}
+
+#endif
 
 // TODO Move to some common place
 static bool getBoolParameter(const char* name, bool defaultValue)
